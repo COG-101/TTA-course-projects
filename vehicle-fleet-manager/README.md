@@ -1,0 +1,2 @@
+# Vehicle Fleet Manager
+A program designed for a fictional vehicle hire company to help manage their fleet of vehicles. Written using OOP in Python, this allow for the tracking, hiring and returning of various types of vehicle, catching several potential errors in user input.
