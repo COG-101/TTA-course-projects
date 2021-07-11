@@ -1,2 +1,2 @@
 # portfolio-projects
-Collection of my projects
+Collection of my portfolio projects
