@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*===========================
+CSS LAYOUT:
+    1. RESET DEFAULTS
+    2. GENERAL STYLING
+    3. BACKGROUND
+    4. NAV
+    5. INPUT SECTION
+
+ATTRIBUTE=VALUE SELECTORS ORDERED BY:
+    1.SIZE
+    2.POSITION
+    3.STYLE
+===========================*/
+
+
+
+
+/* || RESET DEFAULTS */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none; /* Removing arrow counter from input, a default for the number input */
+}
+
+
+
+
+/* || GENERAL STYLING */
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 500;
+    padding: 0px 8px;
+    text-align: center;
+}
+
+img {
+    /* Sharpens png images which were otherwise appearing soft despite being of adequate resolution: */
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
+
+
+
+/* || BACKGROUND */
+.background {
+    height: 100vh;
+    width: 100vw;
+    background-color:  #3665ff; /*fallback color*/
+    background: linear-gradient(130deg, #ff4d4d, #3665ff);
+    background-size: 400% 400%;
+    -webkit-animation: GradientAnimation 16s ease infinite;
+    -moz-animation: GradientAnimation 16s ease infinite;
+    animation: GradientAnimation 16s ease infinite;
+}
+
+@-webkit-keyframes GradientAnimation {
+    0%{background-position:0% 11%}
+    50%{background-position:100% 90%}
+    100%{background-position:0% 11%}
+}@-moz-keyframes GradientAnimation {
+    0%{background-position:0% 11%}
+    50%{background-position:100% 90%}
+    100%{background-position:0% 11%}
+}@keyframes GradientAnimation {
+    0%{background-position:0% 11%}
+    50%{background-position:100% 90%}
+    100%{background-position:0% 11%}
+}
+
+
+
+
+/* || NAV */
+nav {
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 2;
+}
+
+#logo {
+    width: 48px;
+    margin-left: 5%;
+}
+
+#page-name {
+    font-size: 19px;
+    font-weight: 400;
+    margin-left: 18px;
+}
+
+
+
+
+/* || INPUT SECTION */
+.container-1 {
+    height: 140px;
+    width: 700px;
+    margin: auto;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: inherit;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 20px 0 rgba(90, 90, 90, 0.15);
+    border-radius: 10px;
+}
+
+.container-1:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: -20px;
+    box-shadow: inset 0 0 2000px 200px rgba(255, 255, 255, .2);
+    filter: blur(10px);
+}
+
+.inputs  {
+    width: 100%;
+    margin: 0px 60px;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    align-items: center;
+}
+
+.inputs input {
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0px 20px;
+    background: transparent;
+    border-style: none;
+}
+
+.input-1, .input-2 {
+    display: flex;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.farenheit-symbol, .celsius-symbol {
+    margin-right: 2px;
+    display: inline-block;
+    align-self: center;
+    border-left: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.swap-icon {
+    width: 34px;
+    height: 34px;
+}
+
+/* Altering the color of placeholder text for multiple browsers */
+::-webkit-input-placeholder { /* Chrome */
+    color: rgb(255, 255, 255, 0.7);
+}:-ms-input-placeholder { /* IE 10+ */
+    color: rgb(255, 255, 255, 0.7);
+}::-moz-placeholder { /* Firefox 19+ */
+    color: white;
+    opacity: 0.7;
+}:-moz-placeholder { /* Firefox 4 - 18 */
+    color: white;
+    opacity: 0.7;
+}

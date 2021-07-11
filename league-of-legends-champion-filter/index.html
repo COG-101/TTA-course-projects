@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="icon" type="image/png" href="img/champ-finder-logo.png">
+    <script src="scripts\championFilter.js" type="text/javascript" defer></script>
+    <title>Champ Finder</title>
+</head>
+
+<body>
+    <div class="above-the-fold">
+
+        <header>
+            <img id="logo" src="img/champ-finder-logo.png" alt="#">
+            <p id="site-name">Champ Finder</p>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Current Meta</a></li>
+                    <li><a href="#">Player Guide</a></li>
+                    <li><a href="#">Updates</a></li>
+                </ul>
+            </nav>
+        
+            <a href="https://na.leagueoflegends.com/en-gb/" target="_blank"><button class="play-for-free" >Play For Free</button></a>
+        </header>
+
+        <div class="hero-container">
+            <h1 id="hero-small">Find Your New Meta</h1>
+            <h1 id="hero-large">Champion</h1>
+        </div>
+
+        <img class="down-arrow" src="img/arrow.svg" alt="scroll down">
+    </div>
+
+
+
+    <section class="filter-by-role">
+        <h2 class="filter-role-title">Filter By Role</h2>
+        <hr>
+
+        <div class="role-buttons">
+            <button class="filter-button" type="button" data-id="all">All</button>
+            <button class="filter-button" type="button" data-id="top">Top</button>
+            <button class="filter-button" type="button" data-id="jungle">Jungle</button>
+            <button class="filter-button" type="button" data-id="middle">Middle</button>
+            <button class="filter-button" type="button" data-id="bottom">Bottom</button>
+            <button class="filter-button" type="button" data-id="support">Support</button>
+        </div>
+
+        <hr>
+        <div class="champion-container"></div>
+    </section>
+
+
+
+    <footer>
+        <ul class="footer-links">
+            <li><a href="#">Current Meta</a></li>
+            <li><a href="#">Player Guide</a></li>
+            <li><a href="#">Updates</a></li>
+        </ul>
+        <p class="proj-reference">08 - HLT - 07 Menu Page</p>
+    </footer>
+
+</body>
+</html>

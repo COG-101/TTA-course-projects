@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*===========================
+CSS LAYOUT:
+    1. RESET DEFAULTS
+    2. GENERAL STYLING
+    3. BACKGROUND
+    4. NAV
+    5. BODY CONTENT
+    6. INTERACTIVE STYLING
+
+ATTRIBUTE=VALUE SELECTORS ORDERED BY:
+    1.SIZE
+    2.POSITION
+    3.STYLE
+===========================*/
+
+
+
+
+/* || RESET DEFAULTS */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+
+
+
+/* || GENERAL STYLING */
+* {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+
+p, h1, h2, h3, button {
+    letter-spacing: 0.35em;
+    text-indent: 0.35em; /*Spacing add additional empty space on the right which the text indent counteracts*/
+}
+
+h1 { 
+    font-size: 25px;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: 400;
+}
+         
+p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+img {
+    image-rendering: -moz-crisp-edges; /* Firefox */
+    image-rendering: -o-crisp-edges; /* Opera */
+    image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+}
+
+
+
+
+/* || BACKGROUND */
+body {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background: -webkit-linear-gradient(top left, #AF5655, #281D3D);
+    background: -moz-linear-gradient(top left, #AF5655, #281D3D);
+    background: linear-gradient(to bottom right, #AF5655, #281D3D);
+}
+
+
+
+
+/* || NAV */
+nav {
+    width: 82vw;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+}
+
+#logo {
+    height: 45px;
+}
+
+#logo-text {
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 10px;
+    letter-spacing: 0.2em;
+    text-indent: 0.2em;
+}
+
+
+
+
+/* || BODY CONTENT */
+.main-text {
+    margin: auto auto 60px auto ;
+    text-align: center;
+}
+
+.main-content {
+    position: absolute;
+    width: inherit;
+    top: 40%; 
+    margin-top: -150px;
+}
+
+.options-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.or {
+    margin: auto 50px;
+    text-align: center;
+}
+
+.option-1, .option-2 {
+    height: 289px;
+    width: 626px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.option-1, .option-2, .option-1 button, .option-2 button {
+    /* Softens transitions, too jarring by default*/
+    -webkit-transition: background-color 80ms ease-in;
+    -ms-transition: background-color 80ms ease-in;
+    transition: background-color 80ms ease-in;
+}
+
+.option-1 {
+    margin-left: 30px;
+}
+
+.option-2 {
+    margin-right: 30px;
+} 
+
+.option-1 h3, .option-2 h3 {
+    margin-bottom: 5px;
+}
+
+.option-1 h2, .option-2 h2 {
+    margin-bottom: 20px;
+}
+
+button {
+    width: 110px;
+    height: 45px;
+    font-size: 17px;
+    font-weight: 300;
+    border-radius: 0;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.option-1 button {
+    background-color: #34244d;
+}
+
+.option-2 button {
+    background-color: #DB6B6A;
+}
+
+
+
+
+/* || INTERACTIVE STYLING */
+.option-1:hover, .option-2:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.option-1 button:hover {
+    background-color: #221833;
+}
+
+.option-2 button:hover {
+    background-color: #B25151;
+}
+
+.option-1 button:active {
+    background-color: #1e162b;
+    border: 0;
+}
+
+.option-2 button:active {
+    background-color: #7D3837;
+    border: 0;
+}
