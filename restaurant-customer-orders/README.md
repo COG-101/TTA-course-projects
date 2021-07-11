@@ -1,0 +1,2 @@
+# Restaurant Customer Orders
+A TypeScript based application for logging customer orders, outputting order list with total cost. Implements an OOP approach along with enumerated type for simple, error-free order entry.
