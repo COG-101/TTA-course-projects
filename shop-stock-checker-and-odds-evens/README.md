@@ -1,4 +1,4 @@
-# Shop Stock Checker + Odds and Evens function
+# Shop Stock Checker + Odds and Evens
 Two JavaScript programs connected via a single webpage:
 
 The former is a program designed to take user input and run a stock check, appending the item should it be out of stock and the user wishing to order it.
